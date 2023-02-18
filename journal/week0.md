@@ -9,6 +9,7 @@ Updated the gitpod.yml to boot straight into AWS environment.
 ### Recreate Logical Architectual Diagram
 
 ### Create a Billing Alarm
-
+this was completed via AWS CLI , Json file is loaded in repository
 ### Create a Budget
+![Credit Budget] (/journal/assets/budget.jpg)
 
