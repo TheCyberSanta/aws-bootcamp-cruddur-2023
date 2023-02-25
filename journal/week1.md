@@ -1,4 +1,7 @@
 # Week 1 — App Containerization
+## GitPod Usage
+Reviewed the amount of consumption I had for this month
+
 ## Required Homework
   
 This week we were tasked with learning how to use containers to isolate the instance that will be running our application.
@@ -30,6 +33,7 @@ I forgot to place a comma between the notifications strings.
 
 Added a comma and success!
 
+
 ![Happy Days](/journal/assets/appsuccess.JPG)
 
 With notifications finally finished I moved on to adding the DynamoDB services. 
@@ -43,5 +47,7 @@ Here is the records. Be sure to reference the table with the correct punctuation
 
 ![Table Records](/journal/assets/music.JPG)
 
+## Homework Challenges
+Reviewed Adrian Cantrill - Docker Fundamentals
 
 
