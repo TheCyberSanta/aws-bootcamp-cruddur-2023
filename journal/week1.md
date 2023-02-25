@@ -40,6 +40,7 @@ This was perplexing because the code was there. With some intense study of synta
 
 Corrected the syntax and was able to create Table & Items following 100 Days of Cloud Examples [100 Days of Cloud](https://github.com/100DaysOfCloud/challenge-dynamodb-local)
 Here is the records. Be sure to reference the table with the correct punctuation ***Music***
+
 ![Table Records](/journal/assets/music.JPG)
 
 
