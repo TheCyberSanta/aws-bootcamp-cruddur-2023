@@ -32,9 +32,15 @@ Added a comma and success!
 
 ![Happy Days](/journal/assets/appsuccess.JPG)
 
-With notifications finally finished I moved on to adding the DynamoDB services.
-This was not met with immediate success, as I had placed the volume one level deep and got the following when starting the docker container
+With notifications finally finished I moved on to adding the DynamoDB services. 
+This was not met with immediate success. I researched the error and found that the volume was not being created.
+This was perplexing because the code was there. With some intense study of syntax, I had placed the volume one level deep and got the following when starting the docker container
 
 ![Volume Error](/journal/assets/apperror5.JPG)
+
+Corrected the syntax and was able to create Table & Items following 100 Days of Cloud Examples [100 Days of Cloud](https://github.com/100DaysOfCloud/challenge-dynamodb-local)
+Here is the records. Be sure to reference the table with the correct punctuation ***Music***
+![Table Records](/journal/assets/music.JPG)
+
 
 
