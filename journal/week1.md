@@ -50,4 +50,6 @@ Here is the records. Be sure to reference the table with the correct punctuation
 ## Homework Challenges
 Reviewed Adrian Cantrill - Docker Fundamentals
 
+Completed the course. Worked with Docker files and images on local machine. 
 
+![Docker Complete](/journal/assets/docker3.JPG)
