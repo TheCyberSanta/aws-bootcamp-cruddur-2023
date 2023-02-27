@@ -53,3 +53,11 @@ Reviewed Adrian Cantrill - Docker Fundamentals
 Completed the course. Worked with Docker files and images on local machine. 
 
 ![Docker Complete](/journal/assets/docker3.JPG)
+
+Created a ***NewContainerofCats*** Image on Local Machine
+
+![Docker Complete](/journal/assets/docker2.JPG)
+
+Pushed Image to Docker Repository
+
+![Docker Complete](/journal/assets/docker1.JPG)
