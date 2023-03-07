@@ -2,20 +2,13 @@ from datetime import datetime, timedelta, timezone
 from aws_xray_sdk.core import xray_recorder
 class UserActivities:
   def run(user_handle):
-    #xray ----
-    segment = xray_recorder.begin_segment('user_activities')
-
-    model = {
+    try:
+     model = {
       'errors': None,
       'data': None
     }
 
-    now = datetime.now(timezone.utc).astimezone()
-    # xray -----
-    dict = {
-        "now": now.isoformat()
-    }
-    segment.put_metadata('key',dict,'namespace')
+    now = datetime(timezone.utc).astimezone()
 
     if user_handle == None or len(user_handle) < 1:
       model['errors'] = ['blank_user_handle']
@@ -30,5 +23,15 @@ class UserActivities:
       }]
       model['data'] = results
 
-
+      subsegment = xray_recorder.begin_segment('mock-data')
+    #xray -----
+    dict = {
+      "now" : now.isoformat(),
+      "results-size": len(model['data'])
+    }
+    segment.put_metadata('key',dict,'namespace')
+    xray_recorder.end_segment()
+    finally:
+      #close the segment
+    xray_recorder.end_segment()
     return model
