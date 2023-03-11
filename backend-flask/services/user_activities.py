@@ -3,17 +3,17 @@ from aws_xray_sdk.core import xray_recorder
 class UserActivities:
   def run(user_handle):
     try:
-     model = {
-      'errors': None,
-      'data': None
-    }
+      model = {
+        'errors': None,
+        'data': None
+      }
 
-    now = datetime(timezone.utc).astimezone()
+      now = datetime.now(timezone.utc).astimezone()
 
-    if user_handle == None or len(user_handle) < 1:
-      model['errors'] = ['blank_user_handle']
-    else:
-      now = datetime.now()
+      if user_handle == None or len(user_handle) < 1:
+        model['errors'] = ['blank_user_handle']
+      else:
+        now = datetime.now()
       results = [{
         'uuid': '248959df-3079-4947-b847-9e0892d1bab4',
         'handle':  'Andrew Brown',
@@ -25,13 +25,13 @@ class UserActivities:
 
       subsegment = xray_recorder.begin_segment('mock-data')
     #xray -----
-    dict = {
+      dict = {
       "now" : now.isoformat(),
       "results-size": len(model['data'])
     }
-    segment.put_metadata('key',dict,'namespace')
-    xray_recorder.end_segment()
+      segment.put_metadata('key',dict,'namespace')
+      xray_recorder.end_segment()
     finally:
       #close the segment
-    xray_recorder.end_segment()
+      xray_recorder.end_segment()
     return model
