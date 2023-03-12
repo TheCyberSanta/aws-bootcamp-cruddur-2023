@@ -17,7 +17,7 @@ Started to receive data into Honeycomb.
  
 ### Rollbar
 Intillaly had problems with project running, getting an error about Rollbar not defined. I found that the "import rollbar" snipet was missing.
-
+ ![Rollbar](/journal/assets/rollbar.JPG)
 
 ### Your Perfect Cloud Role
  Lou's talk was very good at helping me focus on the specific Cloud Role I am looking for and building a plan.
