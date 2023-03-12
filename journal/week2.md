@@ -16,6 +16,7 @@ Started to receive data into Honeycomb.
  ![Cloudwatch Logs](/journal/assets/cloudwatch.JPG)
  
 ### Rollbar
+Intillaly had problems with project running, getting an error about Rollbar not defined. I found that the "import rollbar" snipet was missing.
 
 
 ### Your Perfect Cloud Role
